@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Chrono</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="result-container">
+        <span id="result-hours">00</span>
+        <span id="result-middle">h</span>
+        <span id="result-minutes">00</span>
+      </div>
+      <div class="card">
+        <div class="card-top">
+          <p class="card-title card-top-title">WRITE YOUR TIME</p>
+          <div class="write-time card-top-group">
+            <input type="text" id="hours" placeholder="00" min="00" max="23" />
+            <p>H</p>
+            <input
+              type="text"
+              id="minutes"
+              placeholder="00"
+              min="00"
+              max="60"
+            />
+          </div>
+        </div>
+        <div class="separation"></div>
+        <p class="card-title card-bottom-title">OR SELECT</p>
+        <div class="card-bottom">
+          <!-- HOURS -->
+          <ul id="hours-list">
+            <li class="li-time-h first">0<span> h</span></li>
+            <li class="li-time-h">1<span> h</span></li>
+            <li class="li-time-h">2<span> h</span></li>
+            <li class="li-time-h">3<span> h</span></li>
+            <li class="li-time-h">4<span> h</span></li>
+            <li class="li-time-h">5<span> h</span></li>
+            <li class="li-time-h">6<span> h</span></li>
+            <li class="li-time-h">7<span> h</span></li>
+            <li class="li-time-h">8<span> h</span></li>
+            <li class="li-time-h">9<span> h</span></li>
+          </ul>
+
+          <!-- MINUTES -->
+          <ul id="minutes-list">
+            <li class="li-time-m first">05<span> min</span></li>
+            <li class="li-time-m">10<span> min</span></li>
+            <li class="li-time-m">15<span> min</span></li>
+            <li class="li-time-m">20<span> min</span></li>
+            <li class="li-time-m">30<span> min</span></li>
+            <li class="li-time-m">35<span> min</span></li>
+            <li class="li-time-m">40<span> min</span></li>
+            <li class="li-time-m">45<span> min</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

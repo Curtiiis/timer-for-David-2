@@ -1,0 +1,157 @@
+:root {
+    --gut-time: 10px;
+    --fz-text: 25px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 160px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-container {
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid #0007;
+    border-radius: 7px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+#result {
+    width: 100%;
+    border: 1px solid #bbb;
+    color: #000b;
+}
+
+.card {
+    box-shadow: 0 0 20px 10px #0003;
+    border-radius: 7px;
+    padding: 15px;
+    height: 235px;
+}
+
+.card-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title {
+    font-size: 9px;
+    color: #000a;
+    letter-spacing: .2px;
+    text-align: center;
+}
+
+.card-bottom-title {
+    margin-top: 10px;
+}
+
+.card-top-group {
+    width: 33%;
+}
+
+.write-time {
+    width: calc(50% - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.write-time p {
+    color: #000a;
+    font-size: 12px;
+}
+
+input[type="text"] {
+    height: 40px;
+    width: 50px;
+    text-align: center;
+    font-size: var(--fz-text);
+    border: none;
+    border-radius: 10px;
+    color: #26818e;
+    padding: 5px;
+}
+
+input[type="text"]:focus-visible {
+    border: none;
+    outline: 0;
+}
+
+input[type="text"]:focus ::placeholder{
+    opacity: .2;
+}
+
+::placeholder {
+    color: #26818e;
+    opacity: .3;
+}
+
+.card-bottom {
+    width: 120px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#minutes-list {
+    display: none;
+}
+
+#hours-list .first {
+    width: 100%;
+    border: 1px solid #0003;
+}
+
+li {
+    list-style-type: none;
+    margin-top: 5px;
+    color: #000b;
+    border-radius: 7px;
+    font-size: 16px;
+    text-align: center;
+    width: fit-content;
+    padding: 5px 10px;
+    transition: .2s;
+}
+
+li:hover {
+    background-color: #26818e;
+    color: #fff;
+    cursor: pointer;
+}
+
+li span {
+    font-size: 10px;
+}
+
+.separation {
+    background-color: #0007;
+    width: 100%;
+    height: 1px;
+
+}
